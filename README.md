@@ -1,7 +1,7 @@
 # biohea-predictor
 
 ## Overview
-BioHEA-Predictor is a machine learning-based tool designed to support the discovery of High Entropy Alloys (HEAs) for biomedical applications.
+BioHEA-Predictor is a machine learning-based tool designed to support the discovery of High Entropy Alloys (HEAs) for biomedical applications using https://colab.research.google.com/.
 
 The model predicts:
 - Elastic modulus (GPa)
