@@ -1,7 +1,5 @@
 # ============================================================
 # FILE: thermodynamics/thermocalc_engine.py
-# PATCHED — V18.2
-# canonical uppercase output + regime tracking + failure taxonomy
 # ============================================================
 
 import json
@@ -11,17 +9,6 @@ import numpy as np
 
 
 class ThermoCalcEngine:
-    """
-    Thermodynamic engine wrapper.
-
-    Canonical output convention:
-        GM, HM, SM
-
-    Failure is explicit:
-        status = success/failure
-        failure_type = timeout / solver_convergence / infeasible_equilibrium /
-                       license_or_import / unknown_failure
-    """
 
     FRAMEWORK_VERSION = "18.2"
 
