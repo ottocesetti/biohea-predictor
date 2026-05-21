@@ -1,7 +1,5 @@
 # ============================================================
 # FILE: validation/ad_diagnostics.py
-# NEW — V18.2
-# applicability-domain diagnostics
 # ============================================================
 
 import numpy as np
@@ -9,10 +7,6 @@ import pandas as pd
 
 
 class ApplicabilityDomainDiagnostics:
-    """
-    Checks whether AD score distributions are degenerate, overly permissive,
-    or dominated by one geometry.
-    """
 
     def score_summary(self, ad_output):
         rows = []
