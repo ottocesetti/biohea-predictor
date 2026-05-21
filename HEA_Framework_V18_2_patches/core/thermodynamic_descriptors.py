@@ -1,7 +1,5 @@
 # ============================================================
 # FILE: core/thermodynamic_descriptors.py
-# PATCHED — V18.2
-# uppercase convention + safe fingerprint cache + masked missingness
 # ============================================================
 
 import json
@@ -13,21 +11,7 @@ from sklearn.base import BaseEstimator, TransformerMixin
 
 
 class ThermodynamicDescriptorBuilder(BaseEstimator, TransformerMixin):
-    """
-    CALPHAD-derived descriptors.
-
-    Canonical scalar convention:
-        GM, HM, SM
-
-    Semantics:
-        NaN   = solver or thermodynamic failure before imputation
-        0.0   = physical phase absence
-        value = valid thermodynamic quantity
-
-    Missingness masks are included:
-        GM_missing_flag, HM_missing_flag, SM_missing_flag
-    """
-
+ 
     FAILURE_TYPES = [
         "timeout",
         "solver_convergence",
