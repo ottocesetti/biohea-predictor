@@ -1,7 +1,5 @@
 # ============================================================
 # FILE: core/interaction_features.py
-# PATCHED — V18.2
-# sklearn-compatible + fitted-state safe + hypothesis metadata
 # ============================================================
 
 import pandas as pd
@@ -9,13 +7,6 @@ from sklearn.base import BaseEstimator, TransformerMixin
 
 
 class PhysicsInteractionGeneratorV2(BaseEstimator, TransformerMixin):
-    """
-    Physically motivated interaction terms.
-
-    These are engineered descriptors, not independent measurements.
-    They should not be used directly for covariance fitting inside
-    applicability-domain estimators.
-    """
 
     def __init__(self, enable_pairwise=False):
         self.enable_pairwise = enable_pairwise
