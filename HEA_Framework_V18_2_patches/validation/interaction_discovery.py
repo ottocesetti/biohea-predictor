@@ -1,7 +1,5 @@
 # ============================================================
 # FILE: validation/interaction_discovery.py
-# NEW — V18.2
-# sparse candidate interaction screening
 # ============================================================
 
 import itertools
@@ -11,12 +9,6 @@ from sklearn.feature_selection import mutual_info_regression
 
 
 class SparseInteractionScreener:
-    """
-    Conservative SISSO-like candidate screening.
-
-    This does not automatically add features to the model.
-    It only reports promising candidates for scientific review.
-    """
 
     def __init__(self, max_candidates=25, random_state=42):
         self.max_candidates = max_candidates
