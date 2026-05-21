@@ -1,7 +1,5 @@
 # ============================================================
 # FILE: validation/feature_diagnostics.py
-# PATCHED — V18.2
-# redundancy + leakage diagnostics
 # ============================================================
 
 import warnings
@@ -18,17 +16,6 @@ from sklearn.preprocessing import StandardScaler
 
 
 class FeatureDiagnostics(BaseEstimator):
-    """
-    Scientific feature-space diagnostics.
-
-    Detects:
-    - redundancy;
-    - collinearity;
-    - feature collapse;
-    - latent dominance;
-    - pseudo-physics;
-    - latent/physical shortcut risk.
-    """
 
     FRAMEWORK_VERSION = "18.2"
 
