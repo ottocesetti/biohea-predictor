@@ -1,7 +1,5 @@
 # ============================================================
 # FILE: models/applicability_domain.py
-# PATCHED — V18.2
-# raw + percentile + EVT-calibrated multi-geometry AD
 # ============================================================
 
 import numpy as np
@@ -12,14 +10,6 @@ from sklearn.neighbors import LocalOutlierFactor
 
 
 class ApplicabilityDomain(BaseEstimator):
-    """
-    Multi-geometry applicability domain.
-
-    Outputs preserve:
-    - raw score;
-    - empirical percentile risk;
-    - optional EVT tail risk.
-    """
 
     def __init__(
         self,
