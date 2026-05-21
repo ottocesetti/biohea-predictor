@@ -1,7 +1,5 @@
 # ============================================================
 # FILE: core/simplex.py
-# PATCHED — V18.2
-# tolerant closure + multiplicative replacement
 # ============================================================
 
 import numpy as np
@@ -9,14 +7,6 @@ import pandas as pd
 
 
 class SimplexUtils:
-    """
-    Utilities for compositional data.
-
-    Experimental compositions often do not close exactly because of rounding,
-    truncation, analytical uncertainty, or unreported trace elements.
-    This module validates, closes, and applies multiplicative replacement
-    before ILR.
-    """
 
     @staticmethod
     def closure(X, eps=1e-15):
@@ -66,9 +56,6 @@ class SimplexUtils:
         normalize=True,
         allow_zero=True,
     ):
-        """
-        Validates and prepares a composition DataFrame for ILR transformation.
-        """
         if not isinstance(X, pd.DataFrame):
             X = pd.DataFrame(X)
 
