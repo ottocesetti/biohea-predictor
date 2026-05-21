@@ -1,7 +1,5 @@
 # ============================================================
 # FILE: validation/latent_diagnostics.py
-# NEW — V18.2
-# UMAP/PCA latent stability diagnostics
 # ============================================================
 
 import warnings
@@ -16,15 +14,6 @@ from scipy.stats import spearmanr
 
 
 class LatentSpaceDiagnostics(BaseEstimator):
-    """
-    Diagnostics for latent embeddings.
-
-    Purpose:
-    - detect unstable UMAP manifolds;
-    - quantify neighborhood preservation;
-    - estimate bootstrap instability;
-    - warn about latent shortcuts and pseudo-topology.
-    """
 
     FRAMEWORK_VERSION = "18.2"
 
