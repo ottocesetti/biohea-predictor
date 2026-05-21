@@ -1,7 +1,5 @@
 # ============================================================
 # FILE: framework/HEAFrameworkV18_2.py
-# PATCHED — V18.2
-# framework wrapper with geometry-aware AD
 # ============================================================
 
 from sklearn.base import BaseEstimator
@@ -12,12 +10,6 @@ from models.applicability_domain import ApplicabilityDomain
 
 
 class HEAFrameworkV18_2(BaseEstimator):
-    """
-    HEA framework wrapper.
-
-    The predictive model receives all features.
-    Applicability domain receives separated geometries only.
-    """
 
     def __init__(
         self,
