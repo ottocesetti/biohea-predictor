@@ -140,42 +140,6 @@ Methodology
 
 The framework follows a modular architecture.
 
-Composition
-    ↓
-Simplex validation and closure
-    ↓
-ILR compositional geometry
-    ↓
-Physics-informed descriptors
-    ↓
-CALPHAD-assisted thermodynamic descriptors
-    ↓
-Physically motivated interaction features
-    ↓
-Latent representation
-    ↓
-Predictive model
-    ↓
-Applicability-domain and diagnostic reports
-Core Components
-Feature Engineering
-GeometricFeatureBuilder
-PhysicalDescriptorBuilder
-ThermodynamicDescriptorBuilder
-PhysicsInteractionGenerator
-LatentFeatureBuilder
-Thermodynamic Layer
-canonical thermodynamic descriptor handling;
-cache key based on composition and thermodynamic regime;
-explicit failure taxonomy;
-metadata tracking for reproducibility.
-Applicability Domain
-Mahalanobis-based compositional and physical-space assessment;
-latent-space novelty detection;
-empirical percentile calibration;
-extreme-tail risk estimation.
-Diagnostics
-
 The framework includes diagnostic tools for:
 
 feature redundancy;
