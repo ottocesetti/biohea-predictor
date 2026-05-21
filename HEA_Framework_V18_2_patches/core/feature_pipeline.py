@@ -1,7 +1,5 @@
 # ============================================================
 # FILE: core/feature_pipeline.py
-# PATCHED — V18.2
-# sklearn-compatible pipeline with safe fit/transform wiring
 # ============================================================
 
 from sklearn.base import BaseEstimator, TransformerMixin
@@ -17,13 +15,6 @@ from core.latent_features import LatentFeatureBuilder
 
 
 class HEAFeaturePipelineV18_2(BaseEstimator, TransformerMixin):
-    """
-    Scientific feature pipeline.
-
-    X must be dictionary-like:
-        X["composition"] -> composition DataFrame
-        X["processing"]  -> processing DataFrame
-    """
 
     def __init__(
         self,
