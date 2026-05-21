@@ -1,7 +1,5 @@
 # ============================================================
 # FILE: core/latent_features.py
-# PATCHED — V18.2
-# leakage-safe latent builder with UMAP/PCA options
 # ============================================================
 
 import warnings
@@ -14,15 +12,6 @@ from sklearn.decomposition import PCA
 
 
 class LatentFeatureBuilder(BaseEstimator, TransformerMixin):
-    """
-    Latent representation builder.
-
-    Important:
-    - latent embeddings do not have direct physical interpretation;
-    - fit() must be called only on training folds;
-    - UMAP is useful but potentially unstable in small datasets;
-    - PCA is recommended as baseline and audit mode.
-    """
 
     FRAMEWORK_VERSION = "18.2"
 
