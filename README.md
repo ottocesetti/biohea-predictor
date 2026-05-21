@@ -251,50 +251,8 @@ experiments-to-target;
 cost-normalized gain;
 Pareto hypervolume;
 out-of-domain failure rate.
-Project Structure
-BioHEA-Predictor/
-│
-├── core/
-│   ├── simplex.py
-│   ├── geometric_features.py
-│   ├── physical_descriptors.py
-│   ├── thermodynamic_descriptors.py
-│   ├── interaction_features.py
-│   ├── latent_features.py
-│   └── feature_pipeline.py
-│
-├── thermodynamics/
-│   └── thermocalc_engine.py
-│
-├── models/
-│   ├── compositional_phase_model.py
-│   └── applicability_domain.py
-│
-├── validation/
-│   ├── feature_diagnostics.py
-│   ├── latent_diagnostics.py
-│   ├── ad_diagnostics.py
-│   ├── thermo_missingness.py
-│   └── interaction_discovery.py
-│
-├── framework/
-│   └── HEAFrameworkV18_2.py
-│
-├── data/
-│   └── datasets and curated composition tables
-│
-├── notebooks/
-│   └── exploratory analysis and experiments
-│
-├── results/
-│   └── metrics, plots, and candidate reports
-│
-├── models_trained/
-│   └── saved trained models
-│
-└── README.md
-Current Status
 
+Current Status:
 This project is under active development.
 
 Implemented:
