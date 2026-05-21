@@ -84,7 +84,6 @@ The framework explicitly considers:
 
 Alloy compositions live in a simplex:
 
-```text
 x₁ + x₂ + ... + xₙ = 1
 
 Therefore, the framework includes compositional preprocessing and ILR-based geometric representations to reduce artifacts caused by naïve composition handling.
@@ -385,17 +384,7 @@ validation using real biomedical HEA datasets;
 closed-loop discovery of Ti-Zr-Nb-Ta-based biomedical alloys.
 Scientific Positioning
 
-BioHEA-Predictor is not intended to be only a black-box predictor.
-
 Its main objective is to provide a transparent and physically informed decision-support framework for alloy discovery.
-
-The key question is not only:
-
-What phase or property does this alloy have?
-
-but also:
-
-Is the model reliable enough in this region of composition space to justify testing this alloy experimentally?
 
 Author
 
