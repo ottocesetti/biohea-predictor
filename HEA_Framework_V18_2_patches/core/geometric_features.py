@@ -1,7 +1,5 @@
 # ============================================================
 # FILE: core/geometric_features.py
-# PATCHED — V18.2
-# tolerant simplex + multiplicative replacement + column lock
 # ============================================================
 
 import pandas as pd
@@ -12,15 +10,6 @@ from core.simplex import SimplexUtils
 
 
 class GeometricFeatureBuilder(BaseEstimator, TransformerMixin):
-    """
-    ILR compositional feature builder.
-
-    Protections:
-    - locks composition column order at fit;
-    - tolerates realistic experimental closure noise;
-    - applies multiplicative replacement before ILR;
-    - rejects negative or non-finite compositions.
-    """
 
     def __init__(
         self,
