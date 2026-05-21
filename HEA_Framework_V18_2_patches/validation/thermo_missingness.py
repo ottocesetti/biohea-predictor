@@ -1,7 +1,5 @@
 # ============================================================
 # FILE: validation/thermo_missingness.py
-# NEW — V18.2
-# thermodynamic missingness and failure diagnostics
 # ============================================================
 
 import numpy as np
@@ -9,14 +7,6 @@ import pandas as pd
 
 
 class ThermodynamicMissingnessDiagnostics:
-    """
-    Audits CALPHAD-derived feature missingness.
-
-    Purpose:
-    - detect systematic solver failures;
-    - detect target-correlated missingness;
-    - quantify whether imputed thermodynamic descriptors may become shortcuts.
-    """
 
     def missingness_report(self, X_thermo, y=None):
         rows = []
